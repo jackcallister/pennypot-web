@@ -1,0 +1,139 @@
+header {
+	background: #404344;
+	width: 100%;
+	position: relative;
+	min-height: 700px;
+
+		h1, h2 {
+			color: white;
+			text-align: center;
+		}
+		h1 {
+			margin-top: 80px;
+			text-transform: uppercase;
+			letter-spacing: 6.2px;
+			font-size: 54px;
+			font-weight: 200;
+		}
+		h2 {
+			font-size: 22px;
+			margin-top: -14px;
+		}
+		button {
+			cursor: pointer;
+			position: absolute;
+			top: 30px;
+			right: 30px;
+			-webkit-appearance: none;
+			border: 0;
+			background: $brand;
+			color: white;
+			padding: 16px 24px;
+			font-size: 16px;
+			border-radius: 3px;
+			font-family: $gotham;
+		}
+		button:hover {
+			opacity: 0.8;
+		}
+		.logo {
+			background: url(../imgs/logo.png);
+			width: 128px; height: 17px;
+			position: absolute;
+			left: 40px;
+			top: 48px;
+		}
+		/* CSS for high-resolution devices */
+		@media only screen and (-Webkit-min-device-pixel-ratio: 1.5),
+		only screen and (-moz-min-device-pixel-ratio: 1.5),
+		only screen and (-o-min-device-pixel-ratio: 3/2),
+		only screen and (min-device-pixel-ratio: 1.5) {
+			.logo {
+				background: url(../imgs/logo@2x.png);
+				background-size: 128px 17px;
+			}
+		}
+		.device-img:before {
+			display: block;
+			position: absolute;
+			z-index: 1;
+			width: 448px;
+			height: 443px;
+			left: 50%;
+			right: 50%;
+			margin-left: -224px;
+			bottom: 0;
+			content: "";
+			background: url(../imgs/device@2x.png) no-repeat;
+			background-position: cemter center;
+			-webkit-background-size: contain contain;
+			background-size: contain;
+		}
+		img {
+			position: absolute;
+			bottom: 0;
+			left: 50%;
+			right: 50%;
+			margin-left: -197px;
+			width: 394px;
+		}
+
+		/* MOBILE */
+		@media screen and (max-width:500px) {
+			.device-img:before {
+				display: block;
+				position: absolute;
+				z-index: 1;
+				width: 224px;
+				height: 221px;
+				left: 50%;
+				right: 50%;
+				margin-left: -112px;
+				bottom: 0;
+				content: "";
+				background: url(../imgs/device.png) no-repeat;
+				background-position: cemter center;
+				-webkit-background-size: contain contain;
+				background-size: contain;
+			}
+			img {
+				position: absolute;
+				bottom: 0;
+				left: 50%;
+				right: 50%;
+				margin-left: -98px;
+				width: 197px;
+			}
+			h1 {
+				margin-top: 120px;
+				font-size: 34px;
+			}
+			h2 {
+				margin-top: -5px;
+				font-size: 16px;
+			}
+			button {
+				padding: 14px 18px;
+				font-size: 14px;
+				top: 20px;
+				right: 20px;
+			}
+			.logo {
+				left: 20px;
+				top: 36px;
+			}
+
+
+		}
+
+
+		#cycler img{z-index:1}
+		#cycler img.active{z-index:3}
+}
+
+@media screen and (max-width:500px) {
+	header {
+		min-height: 500px !important;
+		max-height: 500px;
+	}
+}

@@ -1,0 +1,37 @@
+footer {
+	background: #57595A;
+	padding: 20px;
+
+		p {
+			font-size: 16px;
+			color: white;
+			text-align: center;
+			margin-bottom: 5px;
+		}
+		a {
+			color: white;
+			text-decoration: none;
+			border-bottom: 2px solid gray;
+		}
+		a:hover {
+			border-bottom: 2px solid white;
+		}
+		#copyright {
+			font-size: 14px;
+			opacity: 0.6;
+			margin-bottom: -4px;
+		}
+}
+
+@media screen and (max-width:500px) {
+	footer {
+		padding: 14px;
+
+		 p {
+		 	font-size: 12px;
+		 }
+		 #copyright {
+		 	font-size: 11px;
+		 }
+	}
+}
